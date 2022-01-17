@@ -27,6 +27,8 @@ while True:
     if not letra in palavra:
         digitadas.pop()
 
+    print(digitadas)
+
     for letra in digitadas:
         if letra == palavra:
             palavra_temporaria += letra
