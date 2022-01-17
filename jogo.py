@@ -13,11 +13,10 @@ while True:
 
     letra = input("Digite uma letra: ")
 
-    if letra > 1:
+    if len(letra) > 1:
         print("Digite apenas uma letra.")
         continue
 
     digitadas.append(letra)
     palavra_temporaria = ''
 
-    
