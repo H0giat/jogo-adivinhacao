@@ -17,6 +17,15 @@ while True:
         print("Digite apenas uma letra.")
         continue
 
+    if not letra in palavra:
+        print("Perdeu uma vida")
+        chances -= 1
+
     digitadas.append(letra)
     palavra_temporaria = ''
 
+    for letra in digitadas:
+        if letra == palavra:
+            palavra_temporaria += letra
+        else:
+            palavra_temporaria += '*'
