@@ -17,4 +17,7 @@ while True:
         print("Digite apenas uma letra.")
         continue
 
+    digitadas.append(letra)
+    palavra_temporaria = ''
+
     
