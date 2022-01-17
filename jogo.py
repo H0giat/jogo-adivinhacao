@@ -29,10 +29,13 @@ while True:
 
     print(digitadas)
 
-    for letra in digitadas:
-        if letra == palavra:
-            palavra_temporaria += letra
-        
+    for letra_secreta in palavra:
+        if letra_secreta in digitadas:
+            palavra_temporaria += letra_secreta
+        else:
+            palavra_temporaria += '*'
+    print(palavra_temporaria)
+
     if palavra_temporaria == palavra:
-        print('Parabéns, você ganhou o jogo.')
+        print('Parabéns, você ganhou!')
         break
