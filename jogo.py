@@ -20,12 +20,17 @@ while True:
     if not letra in palavra:
         print("Perdeu uma vida")
         chances -= 1
-
+    
     digitadas.append(letra)
     palavra_temporaria = ''
+
+    if not letra in palavra:
+        digitadas.pop()
 
     for letra in digitadas:
         if letra == palavra:
             palavra_temporaria += letra
-        else:
-            palavra_temporaria += '*'
+        
+    if palavra_temporaria == palavra:
+        print('Parabéns, você ganhou o jogo.')
+        break
