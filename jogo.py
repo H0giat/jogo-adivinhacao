@@ -2,7 +2,7 @@
 jogo de adivinhar a palavra
 """
 
-palavra = 'friends'
+palavra = 'quadribol'
 digitadas = []
 chances = 3
 
